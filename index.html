@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dashboard Gauge Simulator</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .gauge-container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .gauge {
+            background-color: #333;
+            width: 80%;
+            height: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .bar {
+            height: 100%;
+            transition: width 0.5s;
+        }
+
+        .tachometer {
+            background-color: blue;
+        }
+
+        .speedometer {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Dashboard Gauge Simulator</h1>
+    
+    <div class="gauge-container">
+        <!-- Tachometer -->
+        <div class="gauge">
+            <div class="bar tachometer" style="width: 70%;"></div>
+        </div>
+        
+        <!-- Speedometer -->
+        <div class="gauge">
+            <div class="bar speedometer" style="width: 40%;"></div>
+        </div>
+    </div>
+</body>
+</html>
